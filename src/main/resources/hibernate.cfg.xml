@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/rh_manager?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="com/mycompany/rh_manager/Profile.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/Compte.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/Technologie.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/ManagerRhStatus.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/Droit.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/Collaborateur.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/Niveau.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/Diplome.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/TechnologiesMaitrisees.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/PosteSalaire.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/Bu.hbm.xml"/>
+    <mapping resource="com/mycompany/rh_manager/Ecole.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
